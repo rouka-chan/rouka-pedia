@@ -23,16 +23,16 @@ graph TD;
 ### Sequence diagram (状態遷移図)
 ```javascript
 sequenceDiagram
-    participant Alice
-    participant Bob
-    Alice->>John: Hello John, how are you?
-    loop Healthcheck
-        John->>John: Fight against hypochondria
+    participant Client
+    participant MonitoringSystem
+    Client->>Server: query
+    Note right of MonitoringSystem: do something
+    Server-->>Client: query response
+    MonitoringSystem->>Server: health check
+    Server->>MonitoringSystem: ACK
+    loop ClonJob
+        Server->>Server: dump report
     end
-    Note right of John: Rational thoughts <br/>prevail!
-    John-->>Alice: Great!
-    John->>Bob: How about you?
-    Bob-->>John: Jolly good!
 ```
 ```mermaid
 sequenceDiagram
