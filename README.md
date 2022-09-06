@@ -4,6 +4,7 @@
 
 要はブログみたいなもんです。よしなに。  
 気が向いたらサイトジェネレータとか使います。  
+
 ### 最近書いたメモ
 - [mermaid記法メモ](system-design/mermaid.md)
 - [Clean Architecture 読書メモ](books/clean-architecture.md)
